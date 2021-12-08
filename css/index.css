@@ -1,0 +1,261 @@
+  /*
+  * = Tudo,rudo que tiver na pagina*/
+  
+
+*{
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+
+body{
+    background-color: black;
+}
+
+/*
+Quando a TAG tiver id nos referenciamos com #
+Quando a TAG tiver classe nos referenciamos com .
+*/
+
+.divGeral{
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%) ;
+}
+
+.divimg{
+    width: 250px;
+    height: 90%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.divLogin{
+   width: 300px;
+   height: 90%;
+   position: absolute;
+   margin-left: 285px;
+   margin-top: 20px;
+   text-align: center;
+}
+
+.formLogin{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.divContador{
+    width: 75%;
+    height: 280px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+}
+
+.cardContador{
+    width: 100% !important;
+    border-radius: 20px !important;
+    text-align: center;
+}
+
+.divGraficos{
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.conteudoCard span{
+    font-size: 300%;
+}
+
+.conteudoCard img{
+    width: 20%;
+}
+
+.cardapio{
+    margin: auto;
+    width: 80%;
+}
+
+.cardapio table{
+    width: 100%;
+}
+
+.cardImagem{
+    margin: auto;
+    margin-top: 10px;
+    width: 30%;
+    height: 100%;
+    background-image: url('../img/logoPizza.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.botaoAdd{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mdl-dialog{
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%) ;
+    width: 28% !important;
+    height: 45% !important;
+    border-radius: 20px;
+}
+
+.mesas{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.mesa{
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 253, 253);
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 50%;
+    
+}
+
+.mesa h3{
+    margin-top: 20%;
+}
+
+.icones i{
+    padding: 3px;
+    cursor: pointer;
+}
+
+.icones i:hover{
+    background-color: rgb(52, 141, 34);
+    border-radius: 50%;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+}
+
+.pedidos{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.pedido{
+    width: 250px;
+    height: 350px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 10px;
+}
+
+.pedidosDialog{
+    width: 50% !important;
+    height: 50% !important;
+}
+
+.imagemUsuario{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(128, 117, 117);
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    background-image: url('https://www.conticola.com.br/blog/wp-content/themes/editium/assets/front/img/def_gravatar.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.imagemUsuario2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(124, 109, 109);
+    border-radius: 50%;
+    border: 2px solid rgb(0, 0, 0);
+    background-image: url('https://www.conticola.com.br/blog/wp-content/themes/editium/assets/front/img/def_gravatar.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.notificacao{
+    position: absolute;
+    top: 10%;
+    left: 80%;
+    width: 250px;
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+    /* Opacity = Opacidade = 0 e 1 
+    1 = Visivel totalmente
+    0 = N é visivel*/
+    opacity: 0;
+    /*Transition = TRansição do elemento*/
+    transition: opacity 1.5s;
+
+}
+
+.notificacao img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.notificacao p{
+    top: 50%;
+    transform: translate(0%, 65%);
+}
+
+.infoGeral{
+    width: 60%;
+    height: 60%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgb(167, 114, 36);
+    border-radius: 10px;
+}
+.infoUser{
+    width: 95%;
+    height: 150px;
+    background-color: rgb(192, 168, 168);
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.userConteudo{
+    margin: 25px 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.acoes{
+    margin-left: 500px;
+}
+
+.info2{
+    display: grid;
+    grid-template-columns: auto auto;/* auto auto = 2 colunas*/
+    margin: auto;
+    padding: 10px;
+}
+
+.material-icons{
+    cursor: pointer;
+}

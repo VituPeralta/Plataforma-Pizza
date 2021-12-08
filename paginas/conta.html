@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <script src="../js/conta.js"></script>
+        <script src="../js/dados.js"></script>
+        <link rel="stylesheet" href="../css/index.css">
+        <!--Referencia o css fora do html=stylesheet-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.brown-red.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+        <style>
+            .mdl-layout__header{
+              background: url('https://media.istockphoto.com/vectors/best-italian-pizza-banner-with-ribbon-tomato-cheese-mozzarella-flour-vector-id1253496654?k=20&m=1253496654&s=170667a&w=0&h=RnlWrLTh386Gm18QnUmLKe3b47deOI9z1u37hMo_0gI=') center / cover;
+              border-bottom: 5px solid rgb(44, 61, 17);
+            }
+            .demo-layout-transparent .mdl-layout__header,
+            .demo-layout-transparent .mdl-layout__drawer-button {
+              /* This background is dark, so we set text to white. Use 87% black instead if
+                 your background is light. */
+              color: white;
+            }
+        </style>
+    </head>
+
+        <div class="demo-layout-transparent mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--transparent">
+              <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Pizzaria</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a style="color: white; font-size: 18px;" class="mdl-navigation__link" href="paginaPrincipal.html">Dashboard</a>
+                    <a style="color: white; font-size: 18px;" class="mdl-navigation__link" href="pedido.html">Pedidos</a>
+                    <a style="color: white; font-size: 18px;" class="mdl-navigation__link" href="cardapio.html">Cardápio</a>
+                    <a style="color: white; font-size: 18px;" class="mdl-navigation__link" href="../index.html">Sair</a>
+                    <a href="conta.html">
+                      <div id="foto" class="imagemUsuario"></div>
+                    </a>
+                </nav>
+              </div>
+            </header>
+            <div class="mdl-layout__drawer">
+              <span class="mdl-layout-title">Pizzaria</span>
+              <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="paginaPrincipal.html">Dashbooard</a>
+                <a  style="background-color: red; color: green;" class="mdl-navigation__link" href="pedido.html">Pedidos</a>
+                <a class="mdl-navigation__link" href="cardapio.html">Cardapio</a>
+              </nav>
+            </div>
+            <main class="mdl-layout_content">
+              <h4 style="text-align: center; color:white;">Informações da conta</h4>
+              <div class="infoGeral"><!--Caixa Branca-->
+                 <div class="infoUser"><!--Caixa cinza-->
+                    <div class="userConteudo">
+                      <div id="foto2" class="imagemUsuario2"></div>
+                        <div class="info">
+                          <span id="primeiroNome">Primeiro nome; Vitu</span><br>
+                          <span id="segundoNome">Segundo nome. Perreira</span><br>
+                          <span id="cpf">CPF: 999.999.999-89</span><br>
+                          <span id="dataNascimento">Data de nascimeto: 07/12/2028</span><br>
+                          <span id="dataCriacao">Data de criação: 09/11/2025</span>
+                        </div>
+                    <div class="acoes">
+                      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close" id="mudarFoto">
+                        <span class="material-icons">photo_camera</span>
+                      </button>
+                    </div>
+                    </div>
+                    <div class="info2">
+                      <div>
+                        <p><span id="email">Email: vitutodopoderoso@gmail.com</span>...<span></span style="color:black"></p>
+                          <p style="color: rgb(100, 0, 0);">Alterar senha</p>
+                          <p style="color: rgb(100, 0, 0);">Excluir a conta</p>
+                      </div>
+                    <div>
+                    <p>Pedidos anotados: <b>99</b></p>
+                    <p>Comandas anotadas: <b>99</b></p>
+                    <p>Pizzas vendidas: <b>99</b></p>
+                    </div>
+                 </div>
+              </div>
+              <dialog id="caixaFoto" class="mdl-dialog">
+                 <h4 style="text-align: center;">Mudar foto do usuario</h4>
+                 <div class="mdl-textfield mdl-js-textfield">
+                 <input class="mdl-textfield__input" type="text" id="txtImagem">
+                 <label class="mdl-textfield__label" for="sample1">Endereço da imagem...</label>
+               </div>
+               <br>
+                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored close"  id="fechar">Fechar</button>
+                 <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent close" id="alterar">Alterar</button>
+              </dialog>
+            </main>
+
+         
+           </div>
+
+          </script>
+          <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+          <script defer src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+          <script defer src="https://www.gstatic.com/firebasejs/7.17.2/firebase-firestore.js"></script>
+          <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-analytics.js"></script>
+          <script src="../js/firebase.js"></script>
+       </body>
+</html>
+
